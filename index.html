@@ -19,14 +19,6 @@
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link btn btn-success text-white" id="navbar-download-btn" href="#"
-                        role="button">Download APK</a>
-                </li>
-            </ul>
-        </div>
     </nav>
 
     <div class="container text-center mt-5">
@@ -35,9 +27,19 @@
             <p class="lead">Get Connected...🔗</p>
         </header>
 
-        <div class="mb-4">
-            <button id="download-btn" class="btn btn-success btn-lg">Download APK</button>
+        <div class="row mb-4 justify-content-center">
+            <div class="col-12 col-md-auto mb-2">
+                <button id="download-btn-1" class="btn btn-success btn-lg btn-block">ARMv7 APK 📲 (Most devices)</button>
+            </div>
+            <div class="col-12 col-md-auto mb-2">
+                <button id="download-btn-2" class="btn btn-primary btn-lg btn-block">Download ARM64 APK 🌟</button>
+            </div>
+            <div class="col-12 col-md-auto mb-2">
+                <button id="download-btn-3" class="btn btn-info btn-lg btn-block">Download x86_64 APK 🚀</button>
+            </div>
         </div>
+
+        <p class="text-muted">Please ensure to download the appropriate APK for your device architecture. Compatibility may vary with different architectures.</p>
 
         <section class="features">
             <h2 class="mb-4">Why Choose ATLAS?</h2>
@@ -86,13 +88,21 @@
                 </div>
                 <div class="col-md-6 mb-4">
                     <div class="feature p-4">
-                        <h3>🎥 Video Sharing</h3>
-                        <p>Send videos to your friends and family effortlessly.</p>
+                        <h3>🤖 Techie</h3>
+                        <p>Get instant help and information from Techie</p>
                     </div>
                 </div>
             </div>
         </section>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 py-3 bg-dark text-white">
+        <div class="container text-center">
+            <p>&copy; 2024 ATLAS. All rights reserved.</p>
+            <!-- <p>Designed with <i class="fa fa-heart"></i> by Your Team</p> -->
+        </div>
+    </footer>
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
