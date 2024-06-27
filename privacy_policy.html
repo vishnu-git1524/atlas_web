@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - ATLAS</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">ATLAS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="downloads.html">Downloads</a>
+                <!-- <a class="nav-item nav-link" href="terms_and_conditions.html">Terms&Conditions</a>
+                <a class="nav-item nav-link" href="#">Pricing</a>
+            <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
+            </div>
+        </div>
+    </nav>
+    <div class="container text-center mt-5">
+        <header class="mb-4">
+            <h1>Privacy Policy for Atlas</h1>
+        </header>
+        <div class="text-left">
+            <h3>Effective date: <span id="effective-date"></span></h3>
+            <h4 class="mt-4">1. Introduction</h4>
+            <p>Welcome to Atlas. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application (the "App"). Please read this Privacy Policy carefully. If you do not agree with the terms of this Privacy Policy, please do not access the App.</p>
+
+            <h4 class="mt-4">2. Information We Collect</h4>
+            <p>We may collect certain information from you when you use the App. This information may include:</p>
+            <ul>
+                <li><strong>Personal Information:</strong> We may collect personal information such as your name, email address, and other contact details.</li>
+                <li><strong>Device Information:</strong> We may collect information about your mobile device, including its unique device identifier, operating system, and other technical information.</li>
+                <li><strong>Usage Information:</strong> We may collect information about how you use the App, including your interactions with the features and content available through the App.</li>
+            </ul>
+
+            <h4 class="mt-4">3. How We Use Your Information</h4>
+            <p>We may use the information we collect from you for various purposes, including:</p>
+            <ul>
+                <li>To provide and maintain the App.</li>
+                <li>To improve and optimize the App.</li>
+                <li>To respond to your comments, questions, and requests.</li>
+                <li>To send you promotional and marketing communications.</li>
+            </ul>
+
+            <h4 class="mt-4">4. How We Disclose Your Information</h4>
+            <p>We may disclose your information to third parties under various circumstances, including:</p>
+            <ul>
+                <li>With your consent.</li>
+                <li>To comply with legal obligations.</li>
+                <li>To protect our rights, privacy, safety, or property, and that of our users or others.</li>
+            </ul>
+
+            <h4 class="mt-4">5. Security</h4>
+            <p>We take reasonable measures to help protect your information from unauthorized access, use, or disclosure. However, please be aware that no method of transmission over the internet or electronic storage is completely secure and may involve some risk.</p>
+
+            <h4 class="mt-4">6. Changes to This Privacy Policy</h4>
+            <p>We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+
+            <h4 class="mt-4">7. Contact Us</h4>
+            <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at [Contact Email Address].</p>
+        </div>
+    </div>
+
+    <button id="scrollToBottomBtn" class="btn btn-primary" style="position: fixed; bottom: 20px; right: 20px;">
+        <i class="fas fa-arrow-down"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 py-3 bg-dark text-white">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <p>&copy; 2024 ATLAS. All rights reserved.</p>
+                </div>
+                <div class="col-12">
+                    <p>
+                        <a href="terms_and_conditions.html" class="text-white mx-2">Terms & Conditions</a>
+                        <a href="privacy_policy.html" class="text-white mx-2">Privacy Policy</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const effectiveDateElement = document.getElementById('effective-date');
+            const effectiveDate = new Date().toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+            effectiveDateElement.textContent = effectiveDate;
+        });
+    </script>
+        <script>
+            document.getElementById('scrollToBottomBtn').addEventListener('click', function() {
+                window.scrollTo({
+                    top: document.body.scrollHeight,
+                    behavior: 'smooth'
+                });
+            });
+        </script>
+</body>
+
+</html>

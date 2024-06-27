@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        .section {
+            margin-bottom: 32px;
+        }
+
+        .last-updated {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">ATLAS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="downloads.html">Downloads</a>
+                <!-- <a class="nav-item nav-link" href="terms_and_conditions.html">Terms&Conditions</a>
+                <a class="nav-item nav-link" href="#">Pricing</a>
+            <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <header>
+            <h1 class="text-center">Terms and Conditions</h1>
+        </header>
+
+        <section class="section">
+            <h2 class="subtitle">Terms and Conditions for ATLAS</h2>
+            <p>
+                By using this ATLAS, you agree to be bound by these terms and conditions. Please read them carefully
+                before using ATLAS.
+            </p>
+        </section>
+
+        <section class="section">
+            <h3 class="subtitle">1. Acceptance of Terms</h3>
+            <p>
+                By accessing or using ATLAS, you agree to be legally bound by these terms and conditions. If you do not
+                agree with any of these terms, you are prohibited from using or accessing ATLAS.
+            </p>
+        </section>
+
+        <section class="section">
+            <h3 class="subtitle">2. Use of ATLAS</h3>
+            <p>
+                ATLAS is provided for personal use only. You may not use it for any commercial purposes without the
+                express written consent of the developer.
+            </p>
+        </section>
+
+        <section class="section">
+            <h3 class="subtitle">3. User Content</h3>
+            <p>
+                You are solely responsible for any content you post or share on ATLAS. By posting or sharing content,
+                you grant ATLAS non-exclusive, worldwide, royalty-free, and sublicensable rights to use, modify,
+                reproduce, display, and distribute the content.
+            </p>
+        </section>
+
+        <section class="section">
+            <h3 class="subtitle">4. Privacy</h3>
+            <p>
+                Your privacy is important to us. Please review our Privacy Policy to understand how we collect, use, and
+                disclose information.
+            </p>
+        </section>
+
+        <section class="section">
+            <h3 class="subtitle">5. Changes to Terms</h3>
+            <p>
+                We reserve the right to modify or replace these terms and conditions at any time. It is your
+                responsibility to review this page periodically for changes. Your continued use of ATLAS after any
+                changes constitutes acceptance of those changes.
+            </p>
+        </section>
+
+        <section class="section">
+            <h3 class="subtitle">6. Contact Us</h3>
+            <p>
+                If you have any questions or suggestions about these terms and conditions, please contact us at <a
+                    href="mailto:vishnuvenkat1524@gmail.com">vishnuvenkat1524@gmail.com</a>.
+            </p>
+        </section>
+
+        <footer class="text-center">
+            <p class="last-updated" id="lastUpdated"></p>
+        </footer>
+    </div>
+
+    <button id="scrollToBottomBtn" class="btn btn-primary" style="position: fixed; bottom: 20px; right: 20px;">
+        <i class="fas fa-arrow-down"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 py-3 bg-dark text-white">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <p>&copy; 2024 ATLAS. All rights reserved.</p>
+                </div>
+                <div class="col-12">
+                    <p>
+                        <a href="terms_and_conditions.html" class="text-white mx-2">Terms & Conditions</a>
+                        <a href="terms_and_conditions.html" class="text-white mx-2">Privacy Policy</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript to get current date and update lastUpdated element
+        document.addEventListener('DOMContentLoaded', function () {
+            var currentDate = new Date().toISOString().slice(0, 10);
+            document.getElementById('lastUpdated').textContent = 'Last Updated: ' + currentDate;
+        });
+    </script>
+        <script>
+            document.getElementById('scrollToBottomBtn').addEventListener('click', function() {
+                window.scrollTo({
+                    top: document.body.scrollHeight,
+                    behavior: 'smooth'
+                });
+            });
+        </script>
+</body>
+
+</html>
