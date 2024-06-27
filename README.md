@@ -1,6 +1,6 @@
 # ATLAS
 
-![visit our website](https://atlas-download.netlify.app/)
+[visit our website](https://atlas-download.netlify.app/)
 
 ## Get Connected...🔗
 
