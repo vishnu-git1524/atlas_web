@@ -37,9 +37,3 @@ Share your favorite moments with high-quality image sharing.
 
 ### 🤖 Techie
 Get instant help and information from Techie.
-
----
-
-&copy; 2024 ATLAS. All rights reserved.
-
----
